@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+    <title>MINDSCAPE HUB</title>
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Arvo:400,700|" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/ie-support/html5.js"></script>
+    <script src="js/ie-support/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <div id="site-content">
+        <header class="site-header">
+            <div class="primary-header">
+                <div class="container">
+                    <a href="index.html" id="branding">
+                        <img src="images/logo.png" alt="Lincoln high School">
+                        <h1 class="site-title">MINDSCAPE HUB</h1>
+                    </a> <!-- #branding -->
+
+                    <div class="main-navigation">
+                        <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                        <ul class="menu">
+                            <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                            <li class="menu-item"><a href="course.html">Courses</a></li>
+                            <!--<li class="menu-item"><a href="student.html">Students</a></li>-->
+                            <li class="menu-item"><a href="event.html">Events</a></li>
+                            <li class="menu-item"><a href="contact.html">Contact</a></li>
+                        </ul> <!-- .menu -->
+                    </div> <!-- .main-navigation -->
+
+                    <div class="mobile-navigation"></div>
+                </div> <!-- .container -->
+            </div> <!-- .primary-header -->
+
+            <div class="home-slider">
+                <div class="container">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <div class="slide-caption">
+                                    <h2 class="slide-title">I Love to learn! <br> Welcome back pal!</h2>
+                                    <p>Learning is the only thing which continues in each and every stage of life . A proper and guided learning can lead you to taste the success which you suppose to have. </p>
+                                </div>
+                               
+                            </li>
+                            <li>
+                                <div class="slide-caption">
+                                    <h2 class="slide-title">I Love to Read! <br> Welcome back pal!</h2>
+                                    <p>Read , Read and Write to be a perfectionist</p>
+                                </div>
+                               
+                            </li>
+                            <li>
+                                <div class="slide-caption">
+                                    <h2 class="slide-title">I Love to Play! <br> Welcome back pal!</h2>
+                                    <p>Indeed , its true . "Learn , play  and learn" best way to earn anything in life</p>
+                                </div>
+                               
+                            </li>
+                        </ul> <!-- .slides -->
+                    </div> <!-- .slider -->
+                </div> <!-- .container -->
+            </div> <!-- .home-slider -->
+        </header>
+    </div>
+
+    <main class="main-content"style="background-image: url('dummy/thinking.jpg');text-align:center;">
+        
+            <div class="fullwidth-block" style="padding-left:30%">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="boxed-section request-form">
+                                <form action="mailto:jhamomo8@gmail.com"  method="post" enctype="text/plain">
+                                    <h2 class="section-title text-center" name="Query">Query</h2>
+
+                                    <div class="field">
+                                        <label for="email">Email Address:</label>
+                                        <div class="control"><input type="text" id="email" placeholder="example@mail.com"></div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="name">Your name:</label>
+                                        <div class="control"><input type="text" name="Name" id="name" placeholder="Name"></div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="Contact">Contact no.:</label>
+                                        <div class="control"><input type="number" name="Contact number" id="number" placeholder="9xxxxxxxx9" maxlength=10></div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="interest">Feild of Interest</label>
+                                        <div class="Standard">
+                                            <select name="Standard" id="interest">
+                                                <option id="select" value="">Select</option>
+                                                <option id="SixToEight" value="6th" onchange="ShowHideDiv()">6th standard</option>
+                                                <option id="SixToEight" value="6th" onchange="ShowHideDiv()">7th standard</option>
+                                                <option id="SixToEight" value="6th" onchange="ShowHideDiv()">8th standard</option>
+                                                <option id="SixToEight" value="6th" onchange="ShowHideDiv()">9th standard</option>
+                                                <option id="NineToTen" value="9th" onchange="ShowHideDiv()">10th standard</option>
+                                                <option id="Eleven" value="11th" onchange="ShowHideDiv()">11th standard</option>
+                                                <option id="Twelve" value="12th" onchange="ShowHideDiv()">12th standard</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label for="program">Subjects</label>
+                                        <div class="control">
+                                            <select name="Subject" id="program">
+                                                <option id="selects" value="">Select</option>
+                                                <option id="AllSubs" value="All subjects">All subjects</option>
+                                                <option id="Phy" value="Phisycs">Physics</option>
+                                                <option id="Chem" value="Chemistry">Chemistry</option>
+                                                <option id="Maths" value="Maths">Maths</option>
+                                                <option id="Bio" value="Biology">Biology</option>
+                                                <option id="PCM" value="PCM">PCM</option>
+                                                <option id="PCB" value="PCB">PCB</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="field no-label">
+                                        <div class="control">
+                                            <input type="submit" class="button" value="Raise your query">
+                                            <input type="reset" value="Reset">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div> <!-- .boxed-section .request-form -->
+                        </div>
+                        <!--<div class="col-md-6">
+                            <div class="boxed-section best-students">
+                                <h2 class="section-title  text-center">Our best students</h2>
+                                <ul class="best-students-grid">
+                                    <li class="student"><a href="#"><img src="dummy/student-md-1.jpg" alt="student 1"></a></li>
+                                    <li class="student"><a href="#"><img src="dummy/student-md-2.jpg" alt="student 2"></a></li>
+                                    <li class="student"><a href="#"><img src="dummy/student-md-3.jpg" alt="student 3"></a></li>
+                                    <li class="student"><a href="#"><img src="dummy/student-md-4.jpg" alt="student 4"></a></li>
+                                    <li class="student"><a href="#"><img src="dummy/student-md-5.jpg" alt="student 5"></a></li>
+                                    <li class="student"><a href="#" class="more-student">See more</a></li>
+                                </ul>
+                            </div>  .boxed-section .best-students
+                        </div>-->
+                    </div>  <!-- .row -->
+                </div> <!-- .container -->
+            </div> <!-- .fullwidth-block -->
+        
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="widget">
+                        <h3 class="widget-title">Contact us</h3>
+                        <address>MindScape Hub <br>Ambikapur <br>Surguja, CG 497001</address>
+                        <a href="mailto:mohitjha2012@gmail.com">info@mindscapehub.com</a> <br>
+                        <a href="tel:9981347422">(+91) 9981347422</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="widget">
+                        <h3 class="widget-title">Social media</h3>
+                        <p>We are active on</p>
+                        <div class="social-links circle">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="widget">
+                        <h3 class="widget-title">Featured students</h3>
+                        <ul class="student-list">
+                            <li>
+                                <a href="#">
+                                    <img src="dummy/student-sm-1.jpg" alt="" class="avatar">
+                                    <span class="fn">Enroll now</span></br>
+                                    <span>Be a star performer</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="widget">
+                        <h3 class="widget-title">From Director's ✒</h3>
+                        <p>
+                            Our mission at MindScape for students is to provide you with the highest-quality content to make you all comfortable with the subjects you feel tough .
+                            we stand out and work hard for you. You can view all of our articles in our  library, Let us know if you don’t find what you’re looking for; send us an email or give us a call.
+                            Thanks for allowing us the chance to enhance your skills
+                        </p>
+                        <p>In case of any operational emergency you can mail me<span><a style="text-decoration:underline;" href="mailto:mohitjha2012@gmail.com"> here</a></span></p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy">Copyright 2021 MindScape Hub. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+<script type="text/javascript">
+    function ShowHideDiv() {
+        var six = $("#SixToEight").val(); var nine = $("#NineToTen").val(); var eleven = $("#Eleven").val(); var twelve = $("#Twelve").val();
+        if (six == "6th") {
+            $("#AllSubs").show();
+            $("#Phy").hide();
+            $("#Chem").hide();
+            $("#Maths").hide();
+            $("#Bio").hide();
+            $("#PCM").hide();
+            $("#PCB").hide();
+        }
+        else if (nine == "9th") {
+            $("#AllSubs").show();
+            $("#Phy").show();
+            $("#Chem").show();
+            $("#Maths").show();
+            $("#Bio").show();
+            $("#PCM").hide();
+            $("#PCB").hide();
+        }
+        else if (eleven == "11th") {
+            $("#AllSubs").hide();
+            $("#Phy").show();
+            $("#Chem").show();
+            $("#Maths").show();
+            $("#Bio").show();
+            $("#PCM").show();
+            $("#PCB").show();
+        }
+        else if (twelve == "12th") {
+            $("#AllSubs").hide();
+            $("#Phy").show();
+            $("#Chem").show();
+            $("#Maths").show();
+            $("#Bio").show();
+            $("#PCM").show();
+            $("#PCB").show();
+        }
+    }
+
+</script>
